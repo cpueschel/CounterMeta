@@ -21,7 +21,7 @@ Requests
 Revives requests/posts from Data Mining Server
 Revives requests from Django Webserver 
 
-![Communication](https://raw.github.com/IClaudius/CounterMeta/blob/master/databaseimg.png)
+![Communication](https://raw.github.com/IClaudius/CounterMeta/master/databaseimg.png?token=5863881__eyJzY29wZSI6IlJhd0Jsb2I6SUNsYXVkaXVzL0NvdW50ZXJNZXRhL21hc3Rlci9kYXRhYmFzZWltZy5wbmciLCJleHBpcmVzIjoxMzg0Mjk2NDYzfQ%3D%3D--cb44c9ad7ffb67673fdf77324ffcfb5099994267)
 Django Webserver [Heroku]
 Webserver, contains all the computed web pages
 Some pages are static
