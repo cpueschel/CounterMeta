@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+
+	<!-- <img src="H:\logo2.png" align = "left"> -->
+    <title>{% block title %}{% endblock %}</title>
+   <!-- 		Scripts At the End for Fast Page Loads! -->
+    	 {% block scripts %}{% endblock %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://127.0.0.1:8000/media/Scripts/jquery.qtip.min.js"></script>
+	<script type="text/javascript" src="http://127.0.0.1:8000/media/bootstrap.js"></script>
+	<script type="text/javascript" src="http://127.0.0.1:8000/media/Scripts/d3.v3.min.js"></script>
+
+    <script type="text/javascript"  src="http://127.0.0.1:8000/media/Scripts/drawchart.js"></script>
+	<script type="text/javascript" src="http://127.0.0.1:8000/media/Scripts/charter.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1:8000/media/Scripts/testcharter.js"></script>
+    <script type="text/javascript" src="http://127.0.0.1:8000/media/Scripts/sorttable.js"></script>
+	<script type="text/javascript" src="http://127.0.0.1:8000/media/Scripts/linecharter.js"></script>
+      <!-- Bootstrap -->
+    <link href="http://127.0.0.1:8000/media/alternatetest.css" rel="stylesheet" media="screen">
+    <link href="http://127.0.0.1:8000/media/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/media/jquery.qtip.css" rel="stylesheet">
+    <style type="text/css">
+
+    {%block css %}{% endblock %}
+
+    </style>
+
+	
+	<!-- </div> -->
+
+
+</head>
+	
+    <!-- <h1>Counter Meta</h1> -->
+    	<div class = "container">
+    		<div class="row logo">
+    		<a href="/"><img src="http://127.0.0.1:8000/media/images/Custom/path3143.png"></a>
+    		</div>
+
+    		<div class = "row">
+			<!-- <div class="span12" > -->
+		<!-- <div class="span12"> -->
+				<div  class="navbar navbar-inverse">
+			        <div class="navbar-inner">
+			            <!-- <a class="brand" href="#">Counter Meta</a> -->
+			            <ul class="nav">
+
+
+			                <li class="dropdown">
+							    <a href="/Champions/overall/NORMAL/" class="dropdown-toggle" data-toggle="dropdown">CHAMPIONS
+							      <b class="caret"></b>
+							    </a>
+							    <ul class="dropdown-menu">
+							    	<li><a href="/Champions/">Champion Profile</a></li>
+							    	<li><a href="/Champions/overall/NORMAL/">Win Rate</a></li>
+							    	<li><a href="/Champions/overall/NORMAL/">Popularity</a></li>
+							    </ul>
+						    </li>
+
+			                <li class="dropdown">
+							    <a href="/Champions/overall/NORMAL/" class="dropdown-toggle" data-toggle="dropdown">ITEMS
+							      <b class="caret"></b>
+							    </a>
+							    <ul class="dropdown-menu">
+							    	<li><a href="#">Item List</a></li>
+							    	<li><a href="/Champions/overall/NORMAL/">Win Rate</a></li>
+							    	<li><a href="/Champions/overall/NORMAL/">Popularity</a></li>
+							    </ul>
+						    </li>
+
+			      			<li class="dropdown">
+							    <a href="/Champions/overall/NORMAL/" class="dropdown-toggle" data-toggle="dropdown">TIER LIST
+							      <b class="caret"></b>
+							    </a>
+							    <ul class="dropdown-menu">
+							    	<li><a href="#">Item List</a></li>
+							    	<li><a href="/Champions/overall/NORMAL/">Win Rate</a></li>
+							    	<li><a href="/Champions/overall/NORMAL/">Popularity</a></li>
+							    </ul>
+						    </li>
+
+					    	<li class="dropdown">
+						    <a href="/Champions/overall/NORMAL/" class="dropdown-toggle" data-toggle="dropdown">
+						    	TEAM COMPOSITION & COUNTERS
+						      <b class="caret"></b>
+						    </a>
+						    <ul class="dropdown-menu">
+						    	<li><a href="#">Complementrary Champions</a></li>
+						    	<li><a href="/Champions/overall/NORMAL/">Counters</a></li>
+						    	<li><a href="/Champions/overall/NORMAL/">Popularity</a></li>
+						    </ul>
+						    </li>
+
+
+		           		</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<body>
+	<div class="container">
+
+		<div id = "pagecontentconta" class="row">
+
+			<div class="span9">{% block content %}{% endblock %}</div>
+			<div class="span3">{% block ads %}{% endblock %}</div>
+			
+			{% block footer %}
+			{% endblock %}
+			
+
+	    </div>
+    </div>
+</body>
+
+<footer>
+	<div class = "container">
+		<div class="row logo">
+			<p>Insert Awesome Footer Infor RIGHT HERE!</p>
+			<p>About Us</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</div>
+		</div>
+</footer>
+</html>

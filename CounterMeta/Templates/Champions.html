@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}Champions - {{gametype}} {% endblock %}
+
+{%block css %}
+
+
+{% endblock %}
+
+{% block content %}
+<body onLoad="test(data), drawchart('1', gametype2 ,data, '{{gametype}}')" style="text-align: center">
+
+
+  
+      <div class="span9">
+          <ul class="nav nav-tabs">
+        	    
+        	    <li class=
+              {% if gametype = "NORMAL" %} 
+              "active"
+              {% endif %} 
+              ><a href="/Champions/overall/NORMAL/">Normal 5v5</a></li>
+
+                <li class=
+              {% if gametype = "RANKED_SOLO_5x5" %} 
+              "active"
+              {% endif %} 
+              ><a href="/Champions/overall/RANKED_SOLO_5x5/">Ranked Solo/Duo 5v5</a></li>
+
+              <li class=
+              {% if gametype = "RANKED_TEAM_5x5" %} 
+              "active"
+              {% endif %} 
+              ><a href="/Champions/overall/RANKED_TEAM_5x5/">Ranked Team 5v5</a></li>
+
+              <li class=
+               {% if gametype = "NORMAL_3x3" %} 
+              "active"
+              {% endif %} 
+              ><a href="/Champions/overall/NORMAL_3x3/">Normal 3v3</a></li>
+
+        	    <li class=
+              {% if gametype = "RANKED_TEAM_3x3" %} 
+              "active"
+              {% endif %} 
+              ><a href="/Champions/overall/RANKED_TEAM_3x3/">Ranked Team 3v3</a></li>
+
+              <li class=
+              {% if gametype = "ARAM" %} 
+              "active"
+              {% endif %} 
+              ><a href="/Champions/overall/ARAM/">ARAM</a></li>
+
+              <li class=
+              {% if gametype = "ODIN_UNRANKED" %} 
+              "active"
+              {% endif %} 
+              ><a href="/Champions/overall/ODIN_UNRANKED/">Dominion</a></li>
+          </ul>
+        </div>
+
+        <div id = "appendcharthere" class="span9">
+             <!--  <h1 class ="offset4">Bubble Chart</h1> -->
+              <p id = "chart" class='bubblechart span9'></p>
+        </div>
+
+
+
+        <div class="span9">
+          <div id="ele"></div>
+        		<!-- <table class="table table-striped table-hover table-condensed">    
+            	<thead></thead>
+        	    <tbody></tbody>
+              
+        		</table> -->
+        </div>
+
+
+<script>
+
+var data = {{json|safe}}
+gametype = '{{gametype}}';
+// Add Gametype in Proper Format
+              {% if gametype = "NORMAL" %} 
+              gametype2 = "NORMAL 5v5";
+              {% endif %} 
+
+              {% if gametype = "RANKED_SOLO_5x5" %} 
+              gametype2 = "RANKED SOLO 5v5";
+              {% endif %} 
+
+              {% if gametype = "RANKED_TEAM_5x5" %} 
+              gametype2 = "RANKED TEAM 5v5";
+              {% endif %} 
+
+               {% if gametype = "NORMAL_3x3" %} 
+              gametype2 = "NORMAL 3v3";
+              {% endif %} 
+
+              {% if gametype = "RANKED_TEAM_3x3" %} 
+              gametype2 = "RANKED TEAM 3v3";
+              {% endif %} 
+
+              {% if gametype = "ARAM" %} 
+              gametype2 = "ARAM";
+              {% endif %} 
+
+             
+              {% if gametype = "ODIN_UNRANKED" %} 
+              gametype2 = "DOMINION";
+              {% endif %} 
+</script>
+ <script type="text/javascript">
+
+// var img = '<img src="https://si0.twimg.com/a/1339639284/images/three_circles/twitter-bird-white-on-blue.png" />';
+
+// $('circle.dot').each(function(){
+//   $(this).popover({content: img, html:true, trigger: 'hover' });
+// });
+
+</script>
+
+
+
+</body>
+{% endblock %}
+
+{% block ads %}
+  <p>Google Ad Sense</p>
+  <p>Google Ad Sense</p>
+  <p>Google Ad Sense</p>
+  <p>Google Ad Sense</p>
+  <p>Google Ad Sense</p>
+  <p>Affiliates</p>
+  <p>Affiliates</p>
+
+
+
+
+{% endblock %}
+
+
+{% block footer %}
+{% endblock %}
+

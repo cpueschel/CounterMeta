@@ -1,0 +1,9 @@
+from django.contrib import admin
+from ChampionPages.models import Chmpgamel
+
+class ChmpgamelAdmin(admin.ModelAdmin):
+    list_display = ('name', 'gametype', 'position', 'gamesplayed15Min','winratio15Min')
+    list_filter = ('name','gametype',)
+    fields = ('name', 'gametype', 'position', 'gamesplayed15Min','winratio15Min','gamesplayed16Min','winratio16Min','gamesplayed17Min','winratio17Min','gamesplayed18Min','winratio18Min','gamesplayed19Min','winratio19Min','gamesplayed20Min','winratio20Min','gamesplayed21Min','winratio21Min','gamesplayed22Min','winratio22Min','gamesplayed23Min','winratio23Min','gamesplayed24Min','winratio24Min','gamesplayed25Min','winratio25Min','gamesplayed26Min','winratio26Min','gamesplayed27Min','winratio27Min','gamesplayed28Min','winratio28Min','gamesplayed29Min','winratio29Min','gamesplayed30Min','winratio30Min','gamesplayed31Min','winratio31Min','gamesplayed32Min','winratio32Min','gamesplayed33Min','winratio33Min','gamesplayed34Min','winratio34Min','gamesplayed35Min','winratio35Min','gamesplayed36Min','winratio36Min','gamesplayed37Min','winratio37Min','gamesplayed38Min','winratio38Min','gamesplayed39Min','winratio39Min','gamesplayed40Min','winratio40Min','gamesplayed41Min','winratio41Min','gamesplayed42Min','winratio42Min','gamesplayed43Min','winratio43Min','gamesplayed44Min','winratio44Min','gamesplayed45Min','winratio45Min','gamesplayed46Min','winratio46Min','gamesplayed47Min','winratio47Min','gamesplayed48Min','winratio48Min','gamesplayed49Min','winratio49Min','gamesplayed50Min','winratio50Min','gamesplayed51Min','winratio51Min','gamesplayed52Min','winratio52Min','gamesplayed53Min','winratio53Min','gamesplayed54Min','winratio54Min','gamesplayed55Min','winratio55Min')
+
+admin.site.register(Chmpgamel, ChmpgamelAdmin)

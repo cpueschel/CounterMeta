@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Champions - {{gametype}} {% endblock %}
+
+{%block css %}
+
+
+{% endblock %}
+
+{% block content %}
+
+<body class="bodyaddpadding">
+	
+		
+<div class="container-fluid">
+	<div class="span9 searchbar">
+			<form class="navbar-form pull-left">
+			  <h1>Champions</h1>
+			  <input type="text" class="span2">
+			  <button type="submit" class="btn">SEARCH</button>
+			</form>
+		
+	</div>
+{% for names in Names %}
+	<div class="span1 champ-images">
+		
+		<a href="/Champions/{{names}}/">
+		<img class="imgborder" src="http://127.0.0.1:8000/media/images/{{names}}_Square_0.png"/>
+		</a>
+		<div><span>{{names}}</span></div>
+	   
+	</div>		
+
+
+{% endfor %}
+</div>	
+<hr>
+<script type="text/javascript">
+
+$(function() {
+// OPACITY OF BUTTON SET TO 0%
+$("div.champ-images").css("opacity",".65");
+// ON MOUSE OVER
+$("div.champ-images").hover(function () {
+// SET OPACITY TO 70%
+$(this).stop().animate(
+	{opacity: 1}, "fast");
+},
+// ON MOUSE OUT
+function () {
+// SET OPACITY BACK TO 50%
+$(this).stop().animate({
+opacity: .65
+}, "fast");
+});
+});
+
+</script>
+</body>
+
+{% endblock %}
+
+""
+
+
+
+{% block ads %}
+  <p>Google Ad Sense</p>
+  <p>Google Ad Sense</p>
+  <p>Google Ad Sense</p>
+  <p>Google Ad Sense</p>
+  <p>Google Ad Sense</p>
+  <p>Affiliates</p>
+  <p>Affiliates</p>
+
+
+
+
+{% endblock %}
+
+
+{% block footer %}
+{% endblock %}

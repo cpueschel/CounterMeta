@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Champion - {{Champion}} {% endblock %}
+{% block scripts %}
+
+{% endblock %}
+{%block css %}
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+ 
+line {
+    stroke: black;
+}
+ 
+text {
+    font-family: Arial;
+    font-size: 9pt;
+}
+
+{% endblock %}
+
+{% block content %}
+<body onload="drawchart(data)">
+<h1>{{Champion}}</h1>
+<script type="text/javascript">
+  var champ = '{{ Champion  }}'
+   $("h1").append("<img src=\""+"http://127.0.0.1:8000/media/images/" +champ+ "_Square_0.png"+"\"/>");
+</script>
+
+
+  <h1>CHAMPION PAGES!</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<div class="linechart"></div>
+<p>Gamelength Vs. Win Ratio</p>  
+<p>{{gamelengthwinrate}}</p>
+<script type="text/javascript">
+var data = {{gamelengthwinrate|safe}}
+</script>
+{% endblock %}
