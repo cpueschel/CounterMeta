@@ -10,7 +10,6 @@ function drawchart(sortselecting,gametype,data, gametype3){
 //   {"1a": "Sona", "1b": 343, "3cc": 0.75, "4dd": 0.005}];
 
 
-
 // Diemsnion
 var dimensions =
  [{name: "Name"},
@@ -49,7 +48,7 @@ var intwidth = $('.span9').width();
 
 // Chart dimensions.
 var margin = {top: 19.5, right: 19.5, bottom: 19.5, left: 47.5},
-    width = intwidth -margin.left - margin.right,
+    width = intwidth - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 // Various scales. These domains make assumptions of data, naturally.
