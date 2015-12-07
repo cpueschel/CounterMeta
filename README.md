@@ -1,9 +1,13 @@
+## Old site used to display data collected from Riot's Servers. Not entirely finished.
+
+
 ![Logo](https://raw.github.com/IClaudius/CounterMeta/master/media/images/Custom/path3143.png?token=5863881__eyJzY29wZSI6IlJhd0Jsb2I6SUNsYXVkaXVzL0NvdW50ZXJNZXRhL21hc3Rlci9tZWRpYS9pbWFnZXMvQ3VzdG9tL3BhdGgzMTQzLnBuZyIsImV4cGlyZXMiOjEzODQyOTcxMTd9--be99ffbbd44fce9fc89356e5b2284e13a7222df7)
 ===========
 List of Website Services Used for Each Portion
 
-Request, Compute, & Post Server (Data Mining Server)[
+Request, Compute, & Post Server (Data Mining Server)[]
 Java Server Running On Tomcat [x]
+
 Makes Requests to Riot's Servers:
 Player Info [x]
 Game Info [x]
