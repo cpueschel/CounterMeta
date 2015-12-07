@@ -1,4 +1,5 @@
-## Old site used to display data collected from Riot's Servers. Not entirely finished.
+## Old site used to display data collected from Riot's Servers. 
+### Not entirely finished since backend was broken on Riot's side with an update to that lead to the new API.
 
 
 ![Logo](https://raw.github.com/IClaudius/CounterMeta/master/media/images/Custom/path3143.png?token=5863881__eyJzY29wZSI6IlJhd0Jsb2I6SUNsYXVkaXVzL0NvdW50ZXJNZXRhL21hc3Rlci9tZWRpYS9pbWFnZXMvQ3VzdG9tL3BhdGgzMTQzLnBuZyIsImV4cGlyZXMiOjEzODQyOTcxMTd9--be99ffbbd44fce9fc89356e5b2284e13a7222df7)
